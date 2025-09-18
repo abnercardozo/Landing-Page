@@ -7,7 +7,57 @@
 </head>
 <body>
     <h1>Formuário para Contato</h1>
+    <section id="contato">
+  <h1>Entre em Contato</h1>
+  <form>
+    <!-- Nome -->
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 
+    <!-- Telefone -->
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+    <!-- E-mail -->
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required><br><br>
+
+    <!-- Pessoa Física ou Jurídica -->
+    <fieldset>
+      <legend>Você é:</legend>
+      <input type="radio" id="pf" name="tipo" value="fisica" required>
+      <label for="pf">Pessoa Física</label><br>
+      <input type="radio" id="pj" name="tipo" value="juridica">
+      <label for="pj">Pessoa Jurídica</label>
+    </fieldset><br>
+
+    <!-- Melhor horário de contato -->
+    <label for="horario">Melhor horário de contato:</label><br>
+    <select id="horario" name="horario">
+      <option value="manha">Manhã</option>
+      <option value="tarde">Tarde</option>
+      <option value="noite">Noite</option>
+    </select><br><br>
+
+    <!-- Tipo de serviço -->
+    <fieldset>
+      <legend>Tipo de serviço desejado:</legend>
+      <input type="checkbox" id="estatico" name="servico" value="estatico">
+      <label for="estatico">Página Estática</label><br>
+      <input type="checkbox" id="dinamico" name="servico" value="dinamico">
+      <label for="dinamico">Página Dinâmica</label><br>
+      <input type="checkbox" id="avancado" name="servico" value="avancado">
+      <label for="avancado">Página Avançada</label>
+    </fieldset><br>
+
+    <!-- Descrição -->
+    <label for="descricao">Breve descrição do serviço:</label><br>
+    <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Explique o que deseja contratar..."></textarea><br><br>
+
+    <!-- Botão -->
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
     
 </body>
