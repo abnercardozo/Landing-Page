@@ -1,27 +1,27 @@
 /* Importa a fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap' );
 
-/* 1. Variáveis de Cor (Paleta Sugerida) */
+
 :root {
-    --cor-primaria: #0a2342;    /* Azul escuro para títulos e destaques */
-    --cor-secundaria: #2ca58d; /* Verde para botões e links */
-    --cor-fundo: #f4f6f8;       /* Cinza claro para o fundo */
-    --cor-texto: #333;         /* Cinza escuro para textos */
-    --cor-branca: #ffffff;     /* Branco para cards e seções */
+    --cor-primaria: #0a2342;    
+    --cor-secundaria: #2ca58d; 
+    --cor-fundo: #f4f6f8;       
+    --cor-texto: #333;         
+    --cor-branca: #ffffff;     
 }
 
-/* 2. Reset e Estilos Globais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Aplica a fonte em todo o site */
+    font-family: 'Poppins', sans-serif; 
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-    line-height: 1.6; /* Melhora a legibilidade */
+    line-height: 1.6; 
 }
 
 h1, h2, h3 {
@@ -31,35 +31,35 @@ h1, h2, h3 {
 
 a {
     color: var(--cor-secundaria);
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none; 
 }
 
 a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o conteúdo principal */
+    margin: 0 auto; 
     padding: 2rem 0;
 }
 
-/* 3. Estilos do Header e Navegação */
+
 .main-header {
     background-color: var(--cor-branca );
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-    position: sticky; /* Faz o menu ficar fixo no topo ao rolar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
     top: 0;
-    z-index: 1000; /* Garante que o menu fique sobre outros elementos */
+    z-index: 1000; 
 }
 
 .main-header .container {
     display: flex;
-    justify-content: space-between; /* Alinha o logo à esquerda e o menu à direita */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0; /* Remove o padding vertical do container do header */
+    padding: 0; 
 }
 
 .logo {
@@ -70,9 +70,9 @@ a:hover {
 }
 
 .main-nav ul {
-    list-style: none; /* Remove as bolinhas da lista */
+    list-style: none; 
     display: flex;
-    gap: 1.5rem; /* Espaçamento entre os itens do menu */
+    gap: 1.5rem; 
 }
 
 .main-nav a {
@@ -80,10 +80,10 @@ a:hover {
     color: var(--cor-texto);
     font-weight: 600;
     padding: 0.5rem;
-    transition: color 0.3s ease; /* Efeito suave na mudança de cor */
+    transition: color 0.3s ease; 
 }
 
 .main-nav a:hover {
-    color: var(--cor-secundaria); /* Muda a cor ao passar o mouse */
+    color: var(--cor-secundaria); 
     text-decoration: none;
 }
